@@ -10,7 +10,7 @@ const app = express();
 const port = 8000;
 
 //set static path
-app.use(express.static(path.join(__dirname, "static")))
+app.use(express.static(path.join(__dirname, "Static")))
 app.use(bodyParser.json());
 
 const {Pool} = require('pg');
